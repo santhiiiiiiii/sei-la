@@ -52,3 +52,52 @@ function appendToDisplay(value) {
       document.getElementById('display').value = 'Error';
     }
   }
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .title {
+    color: green;
+    background-color: antiquewhite;
+    font-size: 30px;
+    display: flex;
+  }
+
+  .calculator {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 25px;
+  }
+  
+  .calculator input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .calculator .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .calculator button {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+  
+  .calculator button:hover {
+    background-color: #e0e0e0;
+  }
